@@ -14,11 +14,12 @@ namespace CustomerRecords
 
         Address _address;
 
-        public Customer(string fname, string lname, string email, string phone, Address addr)
+        public Customer(string fname, string lname, string mi, string email, string phone, Address addr)
         {
             this._customer_id = generateID(); //Generates ID based on current date and time (YYYYMMDDHHmmSS)
             this._first_name = fname;
             this._last_name = lname;
+            this._middle_initial = mi;
             this._email = email;
             this._phone_number = phone;
             this._address = addr;
